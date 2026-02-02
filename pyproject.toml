@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wesleyanalysis"
+version = "0.1.0"
+description = "My first tools package"
+authors = [{ name="Wesley Ishida" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["numpy", "matplotlib", "scipy"]
