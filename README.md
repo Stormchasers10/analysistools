@@ -1,4 +1,4 @@
-# myanalysis
+# wesleyanalysis
 
 A small Python package for capturing SDR data and computing voltage and power spectra using Fourier transforms.
 
