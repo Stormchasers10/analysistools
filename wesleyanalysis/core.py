@@ -58,7 +58,7 @@ def power_spectrum(data):
     """
     # Power Spectrum
     fft_data = np.fft.fft(data)
-    power = np.abs(fft_data**2)
+    power = np.abs(fft_data)**2
     return power
 
 
