@@ -1,34 +1,34 @@
 #AI was used to help write comments, making it easier to understand the function of each variable.
 
 import numpy as np
-import ugradio
+#import ugradio
 
 
-def capture_data(sample_rate, nsamples, nblocks, direct=True):
-    """
-    Create an SDR object and capture data.
+#def capture_data(sample_rate, nsamples, nblocks, direct=True):
+#    """
+#    Create an SDR object and capture data.
 
-    Parameters
-    ----------
-    sample_rate : float
-        Sampling rate in Hz
-    nsamples : int
-        Number of samples per block
-    nblocks : int
-        Number of blocks
-    direct : bool
-        Use direct sampling mode
+#    Parameters
+#    ----------
+#    sample_rate : float
+#        Sampling rate in Hz
+#    nsamples : int
+#        Number of samples per block
+#    nblocks : int
+#        Number of blocks
+#    direct : bool
+#        Use direct sampling mode
 
-    Returns
-    -------
-    data : np.ndarray
-        Captured data array of shape (nblocks, nsamples)
-    """
-    # Create SDR Object.
-    sdr = ugradio.sdr.SDR(direct=direct, sample_rate=sample_rate)
-    data = sdr.capture_data(nsamples=nsamples, nblocks=nblocks)
-    sdr.close()
-    return data
+#    Returns
+#   -------
+#    data : np.ndarray
+#        Captured data array of shape (nblocks, nsamples)
+#    """
+#    # Create SDR Object.
+#    sdr = ugradio.sdr.SDR(direct=direct, sample_rate=sample_rate)
+#    data = sdr.capture_data(nsamples=nsamples, nblocks=nblocks)
+#    sdr.close()
+#    return data
 
 
 def voltage_spectrum(data):
